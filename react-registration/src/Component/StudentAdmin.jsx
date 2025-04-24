@@ -6,12 +6,12 @@ const StudentAdmin = () => {
         event.preventDefault()
         const sid = event.target.sid.value
         if (sid == '*') {
-            const data = await fetch("http://localhost:3100/admin/show")
+            const data = await fetch("https://csea-student-app.onrender.com/admin/show")
             const res = await data.json()
             setData(res.msg)
         }
         else {
-            const data = await fetch(`http://localhost:3100/admin/showByEmail/${sid}`)
+            const data = await fetch(`https://csea-student-app.onrender.com/admin/showByEmail/${sid}`)
             const res = await data.json()
             console.log(res.msg)
             setData(Array.isArray(res.msg) ? res.msg : [res.msg])
@@ -20,7 +20,7 @@ const StudentAdmin = () => {
 
     const handleDelete = async (email) => {
         alert("Are you sure to delete the Student")
-        const data = await fetch(`http://localhost:3100/admin/deleteByEmail/${email}`,{
+        const data = await fetch(`https://csea-student-app.onrender.com/admin/deleteByEmail/${email}`,{
             method:"delete"
         })
         const res = await data.json()

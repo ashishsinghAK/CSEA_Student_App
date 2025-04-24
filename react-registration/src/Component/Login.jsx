@@ -10,7 +10,7 @@ const Login = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.pass.value;
-        const response = await fetch('http://localhost:3100/login', {
+        const response = await fetch('https://csea-student-app.onrender.com/login', {
             method: "POST",
             body: JSON.stringify({ email, password }),
             headers: { 'Content-Type': 'application/json' }

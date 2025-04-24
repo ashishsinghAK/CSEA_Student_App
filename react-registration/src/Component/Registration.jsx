@@ -12,7 +12,7 @@ const Registration = () => {
         console.log(name, email, password);
 
         try {
-            const response = await fetch('http://localhost:3100/register', {
+            const response = await fetch('https://csea-student-app.onrender.com/register', {
                 method: "POST",
                 body: JSON.stringify({ name, email, password }),
                 headers: { 'Content-Type': 'application/json' }
