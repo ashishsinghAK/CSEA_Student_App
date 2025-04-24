@@ -1,0 +1,21 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: rgb(50, 49, 48);
+}
+
+.head{
+  display: flex;
+  flex-direction:column;
+}
+
+.app{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+

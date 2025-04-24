@@ -1,0 +1,35 @@
+.head{
+    display: flex;
+    flex-direction: column;
+    border:1px solid black;
+    border-style: dashed;
+    margin:2em;
+    padding:2em;
+    width:20em;
+    align-items: center;
+    color:white;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+.btn{
+    color:white;
+    background-color: blue;
+    padding:1em;
+    border-radius: 1em;
+}
+
+.home{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    color: white;
+}
